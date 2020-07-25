@@ -1,0 +1,48 @@
+**Javascript**
+```
+for(var i=1;i<=100;i++, msg=""){
+    if (!(i%3)) msg+="Fizz"; 
+    if (!(i%5)) msg+="Buzz"; 
+    console.log(msg || i); 
+}
+
+OR
+
+for (var i=1; i <= 20; i++)
+{
+    if (i % 15 == 0)
+        console.log("FizzBuzz");
+    else if (i % 3 == 0)
+        console.log("Fizz");
+    else if (i % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(i);
+}
+```
+**C++**
+```
+int i; 
+    for (i=1; i<=100; i++) 
+    { 
+        // number divisible by 3 and 5 will 
+        // always be divisible by 15, print  
+        // 'FizzBuzz' in place of the number 
+        if (i%15 == 0)         
+            printf ("FizzBuzz\t");     
+          
+        // number divisible by 3? print 'Fizz' 
+        // in place of the number 
+        else if ((i%3) == 0)     
+            printf("Fizz\t");                  
+          
+        // number divisible by 5, print 'Buzz'   
+        // in place of the number 
+        else if ((i%5) == 0)                        
+            printf("Buzz\t");                  
+      
+        else // print the number             
+            printf("%d\t", i);                  
+  
+    } 
+```
